@@ -1,3 +1,10 @@
+
+<a name="readmemd"></a>
+
+[@raydeck/dependency-tree-resolver - v1.0.4](#readmemd) › [Globals](#globalsmd)
+
+# @raydeck/dependency-tree-resolver - v1.0.4
+
 # dependency-resolver
 If you have a dependency tree, and you'd like to know in which order to initialize each node, this library is for you.
 
@@ -62,3 +69,193 @@ var resolved = DepResolver(tree);//throw error: circular dependency found: a > b
 ```
 ## License
 This library is provided under the [MIT license](http://choosealicense.com/licenses/mit/).
+
+
+<a name="classesdepresolvererrormd"></a>
+
+[@raydeck/dependency-tree-resolver - v1.0.4](#readmemd) › [Globals](#globalsmd) › [DepResolverError](#classesdepresolvererrormd)
+
+# Class: DepResolverError
+
+## Hierarchy
+
+* [Error](#static-error)
+
+  ↳ **DepResolverError**
+
+## Index
+
+### Constructors
+
+* [constructor](#constructor)
+
+### Properties
+
+* [message](#message)
+* [name](#name)
+* [stack](#optional-stack)
+* [Error](#static-error)
+
+## Constructors
+
+###  constructor
+
+\+ **new DepResolverError**(`message`: string): *[DepResolverError](#classesdepresolvererrormd)*
+
+Defined in src/dep-res.ts:1
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`message` | string |
+
+**Returns:** *[DepResolverError](#classesdepresolvererrormd)*
+
+## Properties
+
+###  message
+
+• **message**: *string*
+
+*Inherited from [DepResolverError](#classesdepresolvererrormd).[message](#message)*
+
+Defined in node_modules/typescript/lib/lib.es5.d.ts:974
+
+___
+
+###  name
+
+• **name**: *string*
+
+*Inherited from [DepResolverError](#classesdepresolvererrormd).[name](#name)*
+
+Defined in node_modules/typescript/lib/lib.es5.d.ts:973
+
+___
+
+### `Optional` stack
+
+• **stack**? : *undefined | string*
+
+*Inherited from [DepResolverError](#classesdepresolvererrormd).[stack](#optional-stack)*
+
+Defined in node_modules/typescript/lib/lib.es5.d.ts:975
+
+___
+
+### `Static` Error
+
+▪ **Error**: *ErrorConstructor*
+
+Defined in node_modules/typescript/lib/lib.es5.d.ts:984
+
+
+<a name="globalsmd"></a>
+
+[@raydeck/dependency-tree-resolver - v1.0.4](#readmemd) › [Globals](#globalsmd)
+
+# @raydeck/dependency-tree-resolver - v1.0.4
+
+## Index
+
+### Classes
+
+* [DepResolverError](#classesdepresolvererrormd)
+
+### Functions
+
+* [removeExcluded](#removeexcluded)
+* [resolve](#resolve)
+* [resolveSpecific](#resolvespecific)
+* [validateDep](#validatedep)
+* [validateDepMap](#validatedepmap)
+
+## Functions
+
+###  removeExcluded
+
+▸ **removeExcluded**(`depMap`: object, `node`: string, `excludeItems`: string[]): *void*
+
+Defined in src/dep-res.ts:6
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`depMap` | object |
+`node` | string |
+`excludeItems` | string[] |
+
+**Returns:** *void*
+
+___
+
+###  resolve
+
+▸ **resolve**(`depMap`: object, `options?`: undefined | object): *string[]*
+
+Defined in src/dep-res.ts:67
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`depMap` | object |
+`options?` | undefined &#124; object |
+
+**Returns:** *string[]*
+
+___
+
+###  resolveSpecific
+
+▸ **resolveSpecific**(`depMap`: object, `result`: string[], `dependant`: string, `path`: string[]): *void*
+
+Defined in src/dep-res.ts:43
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`depMap` | object |
+`result` | string[] |
+`dependant` | string |
+`path` | string[] |
+
+**Returns:** *void*
+
+___
+
+###  validateDep
+
+▸ **validateDep**(`depMap`: object, `node`: string, `dependency`: string): *void*
+
+Defined in src/dep-res.ts:16
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`depMap` | object |
+`node` | string |
+`dependency` | string |
+
+**Returns:** *void*
+
+___
+
+###  validateDepMap
+
+▸ **validateDepMap**(`depMap`: object, `options?`: undefined | object): *void*
+
+Defined in src/dep-res.ts:28
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`depMap` | object |
+`options?` | undefined &#124; object |
+
+**Returns:** *void*

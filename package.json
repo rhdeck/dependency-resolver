@@ -1,10 +1,14 @@
 {
-  "name": "dependency-tree-resolver",
+  "name": "@raydeck/dependency-tree-resolver",
   "version": "1.0.4",
   "description": "An easy-to-use library to resolve dependencies in a dependency tree",
   "author": "Shai Lachmanovich <lachmanovich@gmail.com>",
   "scripts": {
-    "test": "jasmine"
+    "test2": "jasmine",
+    "test": "tsc --noEmit",
+    "build": "tsc",
+    "docs": "typedoc --theme markdown --readme _base.md --mode file --excludeNotExported --includeVersion --out docstemp && rm README.md ; concat-md docstemp > README.md && rm -rf docstemp",
+    "prepublishOnly": "yarn docs && yarn build"
   },
   "main": "src/dep-res",
   "repository": {
@@ -14,5 +18,16 @@
   "bugs": {
     "url": "hhttps://github.com/shaylh/dependency-resolver/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^3.5.12",
+    "concat-md": "^0.3.5",
+    "jasmine": "^3.6.1",
+    "jasmine-spec-reporter": "^5.0.2",
+    "jasmine-ts": "^0.3.0",
+    "ts-node": "^8.10.2",
+    "typedoc": "^0.17.8",
+    "typedoc-plugin-markdown": "^2.4.0",
+    "typescript": "^3.9.7"
+  }
 }

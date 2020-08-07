@@ -4,6 +4,7 @@
   "description": "An easy-to-use library to resolve dependencies in a dependency tree",
   "author": "Shai Lachmanovich <lachmanovich@gmail.com>",
   "scripts": {
+    "pre-commit": "yarn test",
     "test2": "jasmine",
     "test": "tsc --noEmit",
     "build": "tsc",
@@ -21,8 +22,11 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@types/jasmine": "^3.5.12",
     "concat-md": "^0.3.5",
+    "husky": "^4.2.5",
     "jasmine": "^3.6.1",
     "jasmine-spec-reporter": "^5.0.2",
     "jasmine-ts": "^0.3.0",

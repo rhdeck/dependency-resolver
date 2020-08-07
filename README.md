@@ -102,7 +102,7 @@ This library is provided under the [MIT license](http://choosealicense.com/licen
 
 \+ **new DepResolverError**(`message`: string): *[DepResolverError](#classesdepresolvererrormd)*
 
-*Defined in [src/dep-res.ts:1](https://github.com/rhdeck/dependency-resolver/blob/76d115f/src/dep-res.ts#L1)*
+*Defined in [src/dep-res.ts:1](https://github.com/rhdeck/dependency-resolver/blob/c3a14a0/src/dep-res.ts#L1)*
 
 **Parameters:**
 
@@ -177,7 +177,7 @@ Defined in node_modules/typescript/lib/lib.es5.d.ts:984
 
 ▸ **removeExcluded**(`depMap`: object, `node`: string, `excludeItems`: string[]): *void*
 
-*Defined in [src/dep-res.ts:6](https://github.com/rhdeck/dependency-resolver/blob/76d115f/src/dep-res.ts#L6)*
+*Defined in [src/dep-res.ts:6](https://github.com/rhdeck/dependency-resolver/blob/c3a14a0/src/dep-res.ts#L6)*
 
 **Parameters:**
 
@@ -195,7 +195,7 @@ ___
 
 ▸ **resolve**(`depMap`: object, `options?`: undefined | object): *string[]*
 
-*Defined in [src/dep-res.ts:67](https://github.com/rhdeck/dependency-resolver/blob/76d115f/src/dep-res.ts#L67)*
+*Defined in [src/dep-res.ts:67](https://github.com/rhdeck/dependency-resolver/blob/c3a14a0/src/dep-res.ts#L67)*
 
 **Parameters:**
 
@@ -212,7 +212,7 @@ ___
 
 ▸ **resolveSpecific**(`depMap`: object, `result`: string[], `dependant`: string, `path`: string[]): *void*
 
-*Defined in [src/dep-res.ts:43](https://github.com/rhdeck/dependency-resolver/blob/76d115f/src/dep-res.ts#L43)*
+*Defined in [src/dep-res.ts:43](https://github.com/rhdeck/dependency-resolver/blob/c3a14a0/src/dep-res.ts#L43)*
 
 **Parameters:**
 
@@ -231,7 +231,7 @@ ___
 
 ▸ **validateDep**(`depMap`: object, `node`: string, `dependency`: string): *void*
 
-*Defined in [src/dep-res.ts:16](https://github.com/rhdeck/dependency-resolver/blob/76d115f/src/dep-res.ts#L16)*
+*Defined in [src/dep-res.ts:16](https://github.com/rhdeck/dependency-resolver/blob/c3a14a0/src/dep-res.ts#L16)*
 
 **Parameters:**
 
@@ -249,7 +249,7 @@ ___
 
 ▸ **validateDepMap**(`depMap`: object, `options?`: undefined | object): *void*
 
-*Defined in [src/dep-res.ts:28](https://github.com/rhdeck/dependency-resolver/blob/76d115f/src/dep-res.ts#L28)*
+*Defined in [src/dep-res.ts:28](https://github.com/rhdeck/dependency-resolver/blob/c3a14a0/src/dep-res.ts#L28)*
 
 **Parameters:**
 

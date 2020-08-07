@@ -11,8 +11,7 @@
     "docs": "typedoc --theme markdown --readme _base.md --mode file --excludeNotExported --includeVersion --out docstemp && rm README.md ; concat-md docstemp > README.md && rm -rf docstemp",
     "prepublishOnly": "yarn docs && git commit README.md -m \"docs: updating documentation\" ; git push && yarn build"
   },
-  "main": "lib/dep-res",
-  "types": "lib/types",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/shaylh/dependency-resolver"
